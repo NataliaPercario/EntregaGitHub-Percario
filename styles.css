@@ -3,21 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Gradientes*/
 body {
     background: rgb(246,215,5);
     background: radial-gradient(circle, rgba(246,215,5,1) 0%, rgba(0,14,255,1) 100%);
-    margin: 2rem;
+   
     text-align: center;
-
-   
 }
+
 img {
-   width: 300px;
-   
+   width: 100px;
 }
 
-.ejemplo3 {
+.ejemplo3, .ejemplo0 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,19 +26,124 @@ h1, h2 {
     font-size: 3rem;
     margin-top: 5rem;
 }
+h3 {
+    font-family: 'Indie Flower', cursive;
+    margin-top: 5rem;
+}
+
+.caja0 {
+    font-size: 2rem;
+    margin-top: 20rem;
+    transition: all 1s;
+}
+
+.caja0:hover {
+    font-size: 3rem;
+    color: brown;
+}
 
 p {
     font-family: 'Nunito', sans-serif;
     font-size: 2rem;
+    padding: 50px;
+    margin: 50px;
+    
+}
+.escudo0 {
+    display: block;
+    animation-name: animat;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+@keyframes animat {
+    0% {width: 15vw;}
+    25% {width: 19vw;}
+    50% {width: 15vw;}
+    75% {width: 19vw;}
+    100% {width: 15vw;}
+}
+
+.escudo1 {
+    transition: all 2s;
+}
+.escudo1:hover {
+   transform: rotateZ(360deg);
+}
+
+
+div.caja2 {
+    width: auto;
+    height: auto;
+    animation-name: caja2;
+}
+
+.caja2 {
+    font-size: 2rem;
+    animation: animacion 3s linear infinite ;
+    margin: auto;
+}
+
+@keyframes caja2 {
+    from {}
+    to { transform: rotate(360deg);}
+}
+
+.caja2:hover {
+    color: whitesmoke;
+}
+
+div.caja2 {
+    width: 15vw;
+    height: auto;
+    animation-name: caja2;
+}
+div {
+    position: relative0;
     
 }
 
-.p1, .p2, .p3, .p4 {
-    display: inline-block;
-    padding: 50px;
-    margin: 50px;
+.caja2 {
+    font-size: 1.5rem;
+    border: solid rgb(104, 104, 126) 1px;
+    animation: animacion 3s linear infinite;
+    margin: auto;
+    height: 10vw;
 }
 
-.p5, .p6, .p7, .p8 {
-    padding: 4rem;
+
+
+@keyframes caja2 {
+    from {}
+    to { transform: rotate(180deg);}
+}
+
+.caja2:hover {
+    color: aliceblue;
+    border:none;
+}
+
+
+.caja3 {
+    font-size: 2rem;
+    animation-duration: 3s;
+    animation-name: desaparecer;
+    animation-iteration-count: infinite;
+}
+
+@keyframes desaparecer {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    0% {opacity: 0;}
+}
+
+.caja0, .caja2, .caja3 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.footer {    
+   width: 40vh;
 }
